@@ -1,7 +1,7 @@
 # Acessing Dataset file pointer	
 def AccessingDataset():
 	import xlrd
-	workbook=xlrd.open_workbook('data.xlsx')
+	workbook=xlrd.open_workbook('dataset/data.xlsx')
 	FileObj=workbook.sheet_by_name("Sheet1")
 	return FileObj
 

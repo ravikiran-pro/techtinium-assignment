@@ -6,7 +6,7 @@ from extractor import *
 	[2, 0, 0, 1, 0, 0] -->3hours
 	
 """
-def Maximizing_production(Costs,units,totalcost,machine_data,machinehours,expected_hours):
+def Maximizing_production(Costs,units,machine_data,machinehours,expected_hours):
 	marker=1  #to find index of  element to be adjusted 
 	while(marker<len(machine_data)):
 		if(machine_data[marker]!=0):
@@ -14,7 +14,6 @@ def Maximizing_production(Costs,units,totalcost,machine_data,machinehours,expect
 		marker+=1
 	else:
 		return machine_data
-	totalcost-=Costs[marker]
 	machinehours-=1
 	machine_data[marker]-=1
 	add=0
@@ -25,9 +24,8 @@ def Maximizing_production(Costs,units,totalcost,machine_data,machinehours,expect
 			break
 	machine_data[marker]+=add
 	machinehours+=add
-	totalcost+=Costs[marker]*2
 	if(machinehours<expected_hours):
-		Maximizing_production(Costs,units,totalcost,machine_data,machinehours,expected_hours)
+		Maximizing_production(Costs,units,machine_data,machinehours,expected_hours)
 	return machine_data
 
 """ 
@@ -52,7 +50,6 @@ def RegionalResult(capacity,expected_hours,regionName,Machines,Cost,units):
 		if (capacity//units[i] is not 0 and Cost[i] is not None):
 			machine_data[k]=capacity//units[i]
 			machinehours+=(capacity//units[i])
-			totalcost+=Cost[i]*(capacity//units[i])
 			capacity=capacity%units[i]
 		else:
 			machine_data[k]=0
@@ -60,8 +57,8 @@ def RegionalResult(capacity,expected_hours,regionName,Machines,Cost,units):
 
 	#if production faster than expected
 	if machinehours<expected_hours:
-		Maximizing_production(Costs,units,totalcost,machine_data,machinehours,expected_hours)
-	return ParsingRegionalData(machine_data,totalcost,Machines,regionName)
+		Maximizing_production(Costs,units,machine_data,machinehours,expected_hours)
+	return ParsingRegionalData(machine_data,Costs,Machines,regionName)
 
 
 units=(10,20,40,80,160,320)
