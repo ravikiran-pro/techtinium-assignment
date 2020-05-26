@@ -1,0 +1,66 @@
+{
+    "output": [
+        {
+            "region": "New York",
+            "totalcost": 9854,
+            "Machines": [
+                [
+                    "8XLarge",
+                    6
+                ],
+                [
+                    "4XLarge",
+                    1
+                ],
+                [
+                    "XLarge",
+                    1
+                ],
+                [
+                    "Large",
+                    4
+                ]
+            ]
+        },
+        {
+            "region": "India",
+            "totalcost": 9319,
+            "Machines": [
+                [
+                    "8XLarge",
+                    6
+                ],
+                [
+                    "2XLarge",
+                    2
+                ],
+                [
+                    "Large",
+                    6
+                ]
+            ]
+        },
+        {
+            "region": "China",
+            "totalcost": 8350,
+            "Machines": [
+                [
+                    "8XLarge",
+                    6
+                ],
+                [
+                    "4XLarge",
+                    1
+                ],
+                [
+                    "XLarge",
+                    1
+                ],
+                [
+                    "Large",
+                    4
+                ]
+            ]
+        }
+    ]
+}
