@@ -2,31 +2,31 @@
     "output": [
         {
             "region": "New York",
-            "totalcost": 1004,
+            "totalcost": 2760,
             "Machines": [
                 [
                     "Large",
-                    10
+                    23
                 ]
             ]
         },
         {
             "region": "India",
-            "totalcost": 1106,
+            "totalcost": 3220,
             "Machines": [
                 [
                     "Large",
-                    10
+                    23
                 ]
             ]
         },
         {
             "region": "China",
-            "totalcost": 870,
+            "totalcost": 2530,
             "Machines": [
                 [
                     "Large",
-                    10
+                    23
                 ]
             ]
         }

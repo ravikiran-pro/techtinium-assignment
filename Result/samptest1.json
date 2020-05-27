@@ -2,7 +2,7 @@
     "output": [
         {
             "region": "New York",
-            "totalcost": 2200,
+            "totalcost": 2210,
             "Machines": [
                 [
                     "8XLarge",

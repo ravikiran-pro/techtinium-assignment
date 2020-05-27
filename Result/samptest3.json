@@ -2,7 +2,7 @@
     "output": [
         {
             "region": "New York",
-            "totalcost": 9854,
+            "totalcost": 9884,
             "Machines": [
                 [
                     "8XLarge",
@@ -24,7 +24,7 @@
         },
         {
             "region": "India",
-            "totalcost": 9319,
+            "totalcost": 9466,
             "Machines": [
                 [
                     "8XLarge",
@@ -42,7 +42,7 @@
         },
         {
             "region": "China",
-            "totalcost": 8350,
+            "totalcost": 8390,
             "Machines": [
                 [
                     "8XLarge",
